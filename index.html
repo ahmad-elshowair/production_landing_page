@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Dev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,700;1,100;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-wraper">
+      <div class="overlay"></div>
+      <div class="container">
+        <header id="header">
+            <div id="header-img" class="logo-box">
+              <a href="index.html"><span>W</span>eb <span>D</span>ev</a>
+            </div>
+            <nav id="nav-bar">
+              <ul class="nav-list">
+                <li>
+                  <a
+                    href="#"
+                    data-section=".page-wraper"
+                    class="nav-link active"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-section=".services-section" class="nav-link"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-section=".price-section" class="nav-link"
+                    >Pricing</a
+                  >
+                </li>
+                <li>
+                  <a href="#" data-section=".contact-section" class="nav-link"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+              <button class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </nav>
+        </header>
+        <div class="land-page-content">
+          <section class="video-section">
+            <iframe
+              id="video"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/NUjc8FtGcbo""
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </section>
+          <section class="form-section">
+            <h2>Stay updated</h2>
+            <form action="https://www.freecodecamp.com/email-submit)" id="form">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Type your Email!"
+                required
+              />
+              <input type="submit" value="Submit" id="submit" />
+            </form>
+          </section>
+        </div>
+      </div>
+    </div>
+    <main>
+      <section class="services-section">
+        <div class="container">
+        <h2 class="title">Services</h2>
+        <div class="services">
+          <div class="service">
+            <div class="icon">
+              <img
+                src="https://image.flaticon.com/icons/png/512/922/922699.png"
+                alt="designing"
+              />
+            </div>
+            <div class="info">
+              <h4>Designing</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                aspernatur ex incidunt nisi in. Cum ipsum maiores magnam alias
+                quidem?
+              </p>
+            </div>
+            
+          </div>
+          <div class="service">
+            <div class="icon">
+              <img
+                src="https://image.flaticon.com/icons/png/128/2405/2405093.png"
+                alt="branding"
+              />
+            </div>
+            <div class="info">
+              <h4>Branding</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                aspernatur ex incidunt nisi in. Cum ipsum maiores magnam alias
+                quidem?
+              </p>
+            </div>
+            
+          </div>
+          <div class="service">
+            <div class="icon">
+              <img
+                src="https://image.flaticon.com/icons/png/128/2282/2282188.png"
+                alt="development"
+              />
+            </div>
+            <div class="info">
+              <h4>Development</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                aspernatur ex incidunt nisi in. Cum ipsum maiores magnam alias
+                quidem?
+              </p>
+            </div>
+            
+          </div>
+          <div class="service">
+            <div class="icon">
+              <img
+                src="https://image.flaticon.com/icons/png/128/3442/3442344.png"
+                alt="coding"
+              />
+            </div>
+            <div class="info">
+              <h4>Coding</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                aspernatur ex incidunt nisi in. Cum ipsum maiores magnam alias
+                quidem?
+              </p>
+            </div>
+            
+          </div>
+          <div class="service">
+            <div class="icon">
+              <img
+                src="https://image.flaticon.com/icons/png/128/2782/2782187.png"
+                alt="data analysis"
+              />
+            </div>
+            <div class="info">
+              <h4>Data Analysis</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                aspernatur ex incidunt nisi in. Cum ipsum maiores magnam alias
+                quidem?
+              </p>
+            </div>
+            
+          </div>
+          <div class="service">
+            <div class="icon">
+              <img
+                src="https://image.flaticon.com/icons/png/128/1998/1998567.png"
+                alt="Database Design"
+              />
+            </div>
+            <div class="info">
+              <h4>Database Design</h4>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nulla
+                aspernatur ex incidunt nisi in. Cum ipsum maiores magnam alias
+                quidem?
+              </p>
+            </div>
+            
+          </div>
+        </div>
+          
+        </div>
+      </section>
+      <section class="price-section">
+        <div class="container">
+          <h2 class="title">Pricing</h2>
+          <div class="prices">
+            <div class="price">
+              <h3>Prime</h3>
+              <p class="currency"><span>$</span>50</p>
+              <ul>
+                <li>Development</li>
+                <li>Designing</li>
+                <li>Data Analysis</li>
+              </ul>
+            </div>
+            <div class="price">
+              <h3>Enterprise</h3>
+              <p class="currency"><span>$</span>100</p>
+              <ul>
+                <li>Designing</li>
+                <li>Branding</li>
+                <li>Development</li>
+                <li>Coding</li>
+                <li>Data Analysis</li>
+                <li>Database Design</li>
+              </ul>
+            </div>
+            <div class="price">
+              <h3>Pro</h3>
+              <p class="currency"><span>$</span>70</p>
+              <ul>
+                <li>Development</li>
+                <li>Designing</li>
+                <li>Data Analysis</li>
+                <li>Data Branding</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section">
+        <div class="container">
+          <h2 class="title">Contact us</h2>
+          <form action="">
+            <input
+              type="text"
+              name="name"
+              id=""
+              class="form-control"
+              placeholder="Type your Name!"
+            />
+            <input
+              type="email"
+              name="email"
+              id=""
+              class="form-control"
+              placeholder="Type your Email!"
+            />
+            <input
+              type="number"
+              name="number"
+              id=""
+              class="form-control"
+              placeholder="Type your phone number!"
+            />
+            <textarea
+              name="message"
+              id=""
+              class="form-control"
+              placeholder="Type your message!"
+            ></textarea>
+            <button type="submit">Send</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    
+
+    <footer>
+      <div class="container">
+        <div class="site-map">
+          <ul>
+            <li><a href="#" data-section=".page-wraper">Home</a></li>
+            <li><a href="#" data-section=".services-section">Services</a></li>
+            <li><a href="#" data-section=".price-section">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="author">
+          <h5>Designed by Ahmad Elshowair</h5>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
