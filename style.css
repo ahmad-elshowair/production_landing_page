@@ -387,9 +387,7 @@ footer .author {
     height: 100%;
   }
   .navbar .logo-box {
-    width: 271px;
     font-size: 25px;
-    margin-left: 24px;
   }
   .navbar .nav-list {
     display: none;
@@ -499,11 +497,6 @@ footer .author {
     height: 100%;
   }
 
-  .navbar .logo-box {
-    width: 360px;
-    margin-left: 24px;
-  }
-
   .navbar .nav-list {
     display: none;
   }
@@ -595,10 +588,6 @@ footer .author {
   }
   .page-wraper .overlay {
     height: 100%;
-  }
-  .navbar .logo-box {
-    width: 45vw;
-    margin-left: 50px;
   }
   .navbar .nav-list {
     display: none;
