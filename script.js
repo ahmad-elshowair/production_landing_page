@@ -22,17 +22,17 @@ function addActive(links) {
 
 const siteLinks = document.querySelectorAll("footer .site-map ul li a");
 const navLinks = document.querySelectorAll(
-  ".page-wraper header .nav-list li a"
+  ".page-wraper .navbar .nav-list li a"
 );
 goToSection(navLinks);
 goToSection(siteLinks);
 
-const links = document.querySelector("#nav-bar").querySelectorAll("a");
+const links = document.querySelector(".nav_menu").querySelectorAll("a");
 addActive(links);
 
 
 window.addEventListener("scroll", function () {
-  const header = document.querySelector("header");
+  const header = document.querySelector(".navbar");
   const headerHeight = header.offsetHeight;
   header.classList.toggle("scrolled", window.scrollY > headerHeight + 10);
 });
