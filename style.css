@@ -117,15 +117,6 @@ p {
   cursor: pointer;
   display: none;
 }
-.navbar .toggle-btn.clicked::after {
-  content: " ";
-  position: absolute;
-  border-width: 13px;
-  border-style: solid;
-  border-color: transparent transparent #fff transparent;
-  top: 11px;
-  right: 5px;
-}
 
 .navbar .toggle-list:focus {
   outline: none;
@@ -375,7 +366,7 @@ footer .author {
 /* Start gird system */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media (max-width: 600px) {
   /* Start landing page section */
   .container {
     width: 100%;
@@ -392,29 +383,31 @@ footer .author {
   .navbar .nav-list {
     display: none;
   }
-
   .navbar .nav-list.open {
     display: block;
     position: absolute;
+    top: 0;
     left: 0;
-    top: 60px;
     width: 100%;
-    text-align: left;
+    text-align: center;
     padding: 20px;
-    background-color: rgb(251 222 120 / 59%);
+    background-color: rgb(251 222 120 / 30%);
+    backdrop-filter: blur(30px);
+    background-clip: border-box;
   }
 
   .navbar .nav-list.open li {
     display: block;
     margin-bottom: 10px;
     margin-left: 0;
+    transition: 0.5s;
   }
 
   .navbar .nav-list.open li .nav-link {
     color: #fff;
   }
   .navbar .nav-list.open li:hover {
-    margin-left: 10px;
+    background-color: #7a6d3b;
   }
   .navbar .nav-list.open li:hover .nav-link {
     color: var(--main-color);
@@ -488,7 +481,7 @@ footer .author {
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up to up) */
-@media only screen and (min-width: 601px) and (max-width: 767px) {
+@media (max-width: 767px) {
   /* Start landing page section */
   .page-wraper {
     height: 100%;
@@ -499,32 +492,6 @@ footer .author {
 
   .navbar .nav-list {
     display: none;
-  }
-  .navbar .nav-list.open {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 60px;
-    width: 100%;
-    text-align: left;
-    padding: 20px;
-    background-color: rgb(251 222 120 / 59%);
-  }
-
-  .navbar .nav-list.open li {
-    display: block;
-    margin-bottom: 10px;
-    margin-left: 0;
-  }
-
-  .navbar .nav-list.open li .nav-link {
-    color: #fff;
-  }
-  .navbar .nav-list.open li:hover {
-    margin-left: 10px;
-  }
-  .navbar .nav-list.open li:hover .nav-link {
-    color: var(--main-color);
   }
   .navbar .toggle-btn {
     display: inline-block;
@@ -577,7 +544,7 @@ footer .author {
 }
 
 /* Medium devices (landscape tablets, 768px and up to 991px) */
-@media (min-width: 768px) and (max-width: 991px) {
+@media (max-width: 991px) {
   .container {
     max-width: 720px;
     width: 100%;
@@ -597,28 +564,31 @@ footer .author {
     display: block;
     position: absolute;
     left: 0;
-    top: 60px;
     width: 100%;
-    text-align: left;
+    text-align: center;
     padding: 20px;
-    background-color: rgb(251 222 120 / 59%);
+    background-color: rgb(251 222 120 / 30%);
+    backdrop-filter: blur(30px);
+    background-clip: border-box;
   }
 
   .navbar .nav-list.open li {
     display: block;
     margin-bottom: 10px;
     margin-left: 0;
+    transition: 0.5s;
   }
 
   .navbar .nav-list.open li .nav-link {
     color: #fff;
   }
-  .navbar nav .nav-list.open li:hover {
-    margin-left: 10px;
+  .navbar .nav-list.open li:hover {
+    background-color: #7a6d3b;
   }
   .navbar .nav-list.open li:hover .nav-link {
     color: var(--main-color);
   }
+
   .navbar .toggle-btn {
     display: inline-block;
   }
