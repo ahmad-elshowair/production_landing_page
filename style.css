@@ -50,14 +50,15 @@ p {
   z-index: 0;
 }
 .navbar {
-  width: 100vw;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   min-height: 75px;
-  padding: 10px;
+  padding: 10px 0;
   display: flex;
   align-items: center;
+  justify-content: space-around;
 }
 
 .navbar .logo-box {
@@ -732,6 +733,5 @@ footer .author {
 .navbar.scrolled {
   background-color: rgb(251 222 120 / 59%);
   padding: 0;
-  min-height: 60px;
 }
 /* End framework */
