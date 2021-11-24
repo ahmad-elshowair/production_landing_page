@@ -731,7 +731,9 @@ footer .author {
 }
 
 .navbar.scrolled {
-  background-color: rgb(251 222 120 / 59%);
+  background-color: rgb(251 222 120 / 30%);
+  backdrop-filter: blur(15px);
+  background-clip: border-box;
   padding: 0;
 }
 /* End framework */
