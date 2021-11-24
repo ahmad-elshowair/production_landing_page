@@ -62,9 +62,7 @@ p {
 }
 
 .navbar .logo-box {
-  width: 20vw;
   font-size: 30px;
-  margin-left: 115px;
   transition: transform ease-in-out 1s;
 }
 .navbar .logo-box:hover {
@@ -672,7 +670,7 @@ footer .author {
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199px) {
   .container {
     max-width: 960px;
     width: 100%;
@@ -684,10 +682,6 @@ footer .author {
   }
   .page-wraper .overlay {
     height: 100%;
-  }
-  .navbar .logo-box {
-    width: 45vw;
-    margin-left: 50px;
   }
   .navbar .nav-list {
     display: block;
