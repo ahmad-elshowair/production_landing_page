@@ -113,7 +113,6 @@ p {
   width: 40px;
   border: none;
   background: none;
-  margin-top: 40px;
   position: relative;
   cursor: pointer;
   display: none;
@@ -424,8 +423,6 @@ footer .author {
   }
   .navbar .toggle-btn {
     display: inline-block;
-    margin: 0;
-    right: -170px;
   }
   .land-page-content {
     margin: 150px 0 0;
@@ -538,8 +535,6 @@ footer .author {
   }
   .navbar .toggle-btn {
     display: inline-block;
-    margin: 0;
-    right: -170px;
   }
   .land-page-content {
     margin: 150px 0 0;
@@ -589,7 +584,7 @@ footer .author {
 }
 
 /* Medium devices (landscape tablets, 768px and up to 991px) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
   .container {
     max-width: 720px;
     width: 100%;
@@ -637,8 +632,6 @@ footer .author {
   }
   .navbar .toggle-btn {
     display: inline-block;
-    margin: 0;
-    right: -147px;
   }
   .land-page-content {
     margin: 200px 0 100px;
