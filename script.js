@@ -39,6 +39,8 @@ addActive(links);
 window.addEventListener("scroll", function () {
   if (!navList.classList.contains("open")) {
     header.classList.toggle("scrolled", window.scrollY > headerHeight + 10);
+  } else {
+    header.classList.remove("scrolled");
   }
 });
 
