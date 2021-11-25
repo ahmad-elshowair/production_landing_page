@@ -382,39 +382,41 @@ footer .author {
     font-size: 25px;
   }
   .navbar .nav-list {
-    display: none;
-  }
-  .navbar .nav-list.open {
     display: block;
     position: absolute;
     left: 0;
     width: 100%;
-    top: 0;
     text-align: center;
-    padding: 75px 0 20px;
+    padding: 20px;
     background-color: rgb(251 222 120 / 30%);
     backdrop-filter: blur(30px);
     background-clip: border-box;
+    transform: translateX(-700px);
+    transition: 0.5s;
   }
 
-  .navbar .nav-list.open li {
+  .navbar .nav-list.open {
+    transform: translateX(0);
+  }
+
+  .navbar .nav-list li {
     display: block;
     margin-bottom: 10px;
     margin-left: 0;
     padding: 10xp 0;
     transition: 0.5s;
   }
-  .navbar .nav-list.open li:last-child {
+  .navbar .nav-list li:last-child {
     margin-bottom: 0;
   }
 
-  .navbar .nav-list.open li .nav-link {
+  .navbar .nav-list li .nav-link {
     color: #fff;
   }
-  .navbar .nav-list.open li:hover {
+  .navbar .nav-list li:hover {
     background-color: #7a6d3b;
   }
-  .navbar .nav-list.open li:hover .nav-link {
+  .navbar .nav-list li:hover .nav-link {
     color: var(--main-color);
   }
   .navbar .toggle-btn {
