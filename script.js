@@ -1,3 +1,14 @@
+/* ++++++++++++++++++++++++++++  START DECLARE GLOBAL VARIABLES  ++++++++++++++++++++++++++++ */
+const siteLinks = document.querySelectorAll("footer .site-map ul li a");
+const navLinks = document.querySelectorAll(".page-wraper header .nav-list li a");
+const links = document.querySelector("#nav-bar").querySelectorAll("a");
+const header = document.querySelector("header");
+const headerHeight = header.offsetHeight;
+const toggleButton = document.querySelector(".toggle-btn");
+const navList = document.querySelector(".nav-list");
+
+/* ++++++++++++++++++++++++++++  END DECLARE GLOBAL VARIABLES  ++++++++++++++++++++++++++++ */
+
 // create function to go to specific part of the page
 function goToSection(elements) {
   elements.forEach((element) => {
@@ -20,28 +31,17 @@ function addActive(links) {
   });
 }
 
-const siteLinks = document.querySelectorAll("footer .site-map ul li a");
-const navLinks = document.querySelectorAll(
-  ".page-wraper header .nav-list li a"
-);
 goToSection(navLinks);
 goToSection(siteLinks);
-
-const links = document.querySelector("#nav-bar").querySelectorAll("a");
 addActive(links);
 
 
 window.addEventListener("scroll", function () {
-  const header = document.querySelector("header");
-  const headerHeight = header.offsetHeight;
   header.classList.toggle("scrolled", window.scrollY > headerHeight + 10);
 });
 
 
 // Start toggle nav list 
-const toggleButton = document.querySelector(".toggle-btn");
-const navList = document.querySelector(".nav-list")
-
 toggleButton.onclick = function (e) {
   e.stopPropagation();
   this.classList.toggle("clicked");
