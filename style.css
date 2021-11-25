@@ -552,8 +552,8 @@ footer .author {
     top: 0;
     width: 100%;
     text-align: center;
-    padding: 75px 0 20px;
-    background-color: rgb(251 222 120 / 30%);
+    padding: 75px 0 0;
+    background-color: rgb(251 222 120 / 50%);
     backdrop-filter: blur(30px);
     background-clip: border-box;
     transform: translateY(-700px);
@@ -569,18 +569,23 @@ footer .author {
     margin-bottom: 10px;
     padding: 10px 0;
     margin-left: 0;
+    transition: 0.5s;
   }
   header nav .nav-list li:last-child {
     margin-bottom: 0;
   }
   header nav .nav-list li .nav-link {
+    display: block;
     color: #fff;
+
+    transition: 0.5s;
   }
   header nav .nav-list li:hover {
-    margin-left: 10px;
+    background-color: #7a6d3b;
   }
   header nav .nav-list li:hover .nav-link {
     color: var(--main-color);
+    margin-left: 10px;
   }
   header nav .toggle-btn {
     display: inline-block;
