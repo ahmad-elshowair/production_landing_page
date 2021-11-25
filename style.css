@@ -735,8 +735,8 @@ footer .author {
 }
 
 header.scrolled {
-  background-color: rgb(251 222 120 / 59%);
-  padding: 0;
-  min-height: 60px;
+  background-color: rgb(251 222 120 / 30%);
+  backdrop-filter: blur(30px);
+  background-clip: border-box;
 }
 /* End framework */
