@@ -374,10 +374,10 @@ footer .author {
 }
 /* End footer style */
 
-/* Start gird system */
+/* +++++++++++++++++++++++++++++++++ Start gird system +++++++++++++++++++++++++++++++++ */
 
-/* Extra small devices (phones, 600px and down) */
-@media (max-width: 600px) {
+/* Extra Small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
   /* Start landing page section */
   .page-wraper {
     height: 100%;
@@ -491,8 +491,8 @@ footer .author {
   /* End contact section style */
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up to up) */
-@media (max-width: 767px) {
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
   /* Start landing page section */
   .page-wraper {
     height: 100%;
@@ -587,8 +587,8 @@ footer .author {
   /* End contact section style */
 }
 
-/* Medium devices (landscape tablets, 768px and up to 991px) */
-@media (max-width: 991px) {
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
@@ -667,7 +667,7 @@ footer .author {
   /* End prices section style */
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
@@ -700,9 +700,9 @@ footer .author {
   /* End wraper page section style */
 }
 
-/* End gird system */
+/* ++++++++++++++++++++++++++++++ End gird system ++++++++++++++++++++++++++++++ */
 
-/* Start framework */
+/* ++++++++++++++++++++++++++++++ Start framework ++++++++++++++++++++++++++++++++++++ */
 .title {
   text-align: center;
   margin-bottom: 75px;
@@ -726,4 +726,4 @@ header.scrolled {
   backdrop-filter: blur(30px);
   background-clip: border-box;
 }
-/* End framework */
+/* ++++++++++++++++++++++++++++++ End framework ++++++++++++++++++++++++++++++ */
