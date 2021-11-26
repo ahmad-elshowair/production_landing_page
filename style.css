@@ -401,6 +401,49 @@ footer .author {
     margin: 0;
     right: -170px;
   }
+  header nav .nav-list {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 75px 0 0;
+    background-color: rgb(251 222 120 / 50%);
+    backdrop-filter: blur(30px);
+    background-clip: border-box;
+    transform: translateY(-700px);
+    transition: 0.5s;
+  }
+
+  header nav .nav-list.open {
+    transform: translateX(0);
+  }
+
+  header nav .nav-list li {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    margin-left: 0;
+    transition: 0.5s;
+  }
+  header nav .nav-list li:last-child {
+    margin-bottom: 0;
+  }
+  header nav .nav-list li .nav-link {
+    display: block;
+    color: #fff;
+
+    transition: 0.5s;
+  }
+  header nav .nav-list li:hover {
+    background-color: #7a6d3b;
+  }
+  header nav .nav-list li:hover .nav-link {
+    color: var(--main-color);
+    margin-left: 10px;
+  }
+
   .land-page-content {
     margin: 150px 0 0;
   }
@@ -487,6 +530,48 @@ footer .author {
     display: inline-block;
     margin: 0;
     right: -170px;
+  }
+  header nav .nav-list {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 75px 0 0;
+    background-color: rgb(251 222 120 / 50%);
+    backdrop-filter: blur(30px);
+    background-clip: border-box;
+    transform: translateY(-700px);
+    transition: 0.5s;
+  }
+
+  header nav .nav-list.open {
+    transform: translateX(0);
+  }
+
+  header nav .nav-list li {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    margin-left: 0;
+    transition: 0.5s;
+  }
+  header nav .nav-list li:last-child {
+    margin-bottom: 0;
+  }
+  header nav .nav-list li .nav-link {
+    display: block;
+    color: #fff;
+
+    transition: 0.5s;
+  }
+  header nav .nav-list li:hover {
+    background-color: #7a6d3b;
+  }
+  header nav .nav-list li:hover .nav-link {
+    color: var(--main-color);
+    margin-left: 10px;
   }
   .land-page-content {
     margin: 150px 0 0;
