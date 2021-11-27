@@ -109,14 +109,19 @@ header nav .nav-list li:hover .nav-link {
 }
 
 header nav .toggle-btn {
-  width: 40px;
+  width: 50px;
   border: none;
-  background: none;
   margin-top: 40px;
   position: relative;
   cursor: pointer;
   display: none;
+  align-items: center;
+  justify-content: center;
   z-index: 3;
+  height: 50px;
+  background: none;
+  transition: 0.5s;
+  overflow: hidden;
 }
 
 header nav .toggle-list:focus {
@@ -126,14 +131,39 @@ header nav .toggle-list:focus {
 header nav .toggle-btn span {
   width: 100%;
   height: 4px;
-  background-color: #fff;
-  margin-bottom: 5px;
-  display: block;
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 10px;
+  transition: 0.5s;
+  left: 0;
 }
 
-header nav .toggle-btn span:last-child {
-  margin-bottom: 0;
+header nav .toggle-btn span:nth-child(1) {
+  width: 70%;
+  transform: translateY(-15px);
 }
+header nav .toggle-btn span:nth-child(2) {
+  width: 90%;
+}
+header nav .toggle-btn span:nth-child(3) {
+  width: 30%;
+  transform: translateY(15px);
+}
+
+header nav .toggle-btn.clicked span:nth-child(1) {
+  transform: translateY(0);
+  transform: rotate(45deg);
+  width: 90%;
+}
+header nav .toggle-btn.clicked span:nth-child(2) {
+  transform: translateX(100px);
+}
+header nav .toggle-btn.clicked span:nth-child(3) {
+  transform: translateY(0);
+  transform: rotate(315deg);
+  width: 90%;
+}
+
 .land-page-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -385,7 +415,7 @@ footer .author {
     font-size: 23px;
   }
   header nav .toggle-btn {
-    display: block;
+    display: flex;
     margin: 0;
   }
   header nav .nav-list {
