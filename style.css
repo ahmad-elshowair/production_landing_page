@@ -62,9 +62,6 @@ header {
 }
 
 header .logo-box {
-  width: 20vw;
-  font-size: 30px;
-  margin-left: 115px;
   transition: transform ease-in-out 1s;
   z-index: 2;
 }
@@ -72,6 +69,7 @@ header .logo-box:hover {
   transform: scale3d(1, 1.2, 1.2);
 }
 header .logo-box a {
+  font-size: 30px;
   color: #fff;
   font-weight: bold;
 }
