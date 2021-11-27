@@ -96,6 +96,7 @@ header nav .nav-list li .nav-link {
   color: #7a6d3b;
   font-weight: 500;
   font-size: 18px;
+  font-weight: bold;
   transition: color ease-in 1s;
 }
 
