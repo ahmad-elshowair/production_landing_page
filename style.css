@@ -44,7 +44,13 @@ p {
   left: 0;
   background-color: #34333c;
   mix-blend-mode: overlay;
+  z-index: 0;
 }
+
+.page-wraper .container {
+  position: relative;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -59,7 +65,7 @@ header {
 
 header .logo-box {
   transition: transform ease-in-out 1s;
-  z-index: 2;
+  z-index: 4;
 }
 header .logo-box:hover {
   transform: scale3d(1, 1.2, 1.2);
@@ -76,6 +82,7 @@ header .logo-box a span {
 
 header nav .nav-list {
   padding: 0;
+  z-index: 3;
 }
 
 header nav .nav-list li {
@@ -102,22 +109,19 @@ header nav .nav-list li:hover .nav-link {
 }
 
 header nav .toggle-btn {
-  width: 40px;
+  width: 50px;
   border: none;
-  background: none;
   margin-top: 40px;
   position: relative;
   cursor: pointer;
   display: none;
-}
-header nav .toggle-btn.clicked::after {
-  content: " ";
-  position: absolute;
-  border-width: 13px;
-  border-style: solid;
-  border-color: transparent transparent #fff transparent;
-  top: 11px;
-  right: 5px;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+  height: 50px;
+  background: none;
+  transition: 0.5s;
+  overflow: hidden;
 }
 
 header nav .toggle-list:focus {
@@ -127,14 +131,39 @@ header nav .toggle-list:focus {
 header nav .toggle-btn span {
   width: 100%;
   height: 4px;
-  background-color: #fff;
-  margin-bottom: 5px;
-  display: block;
+  background-color: #ffffff;
+  position: absolute;
+  border-radius: 10px;
+  transition: 0.5s;
+  left: 0;
 }
 
-header nav .toggle-btn span:last-child {
-  margin-bottom: 0;
+header nav .toggle-btn span:nth-child(1) {
+  width: 70%;
+  transform: translateY(-15px);
 }
+header nav .toggle-btn span:nth-child(2) {
+  width: 90%;
+}
+header nav .toggle-btn span:nth-child(3) {
+  width: 30%;
+  transform: translateY(15px);
+}
+
+header nav .toggle-btn.clicked span:nth-child(1) {
+  transform: translateY(0);
+  transform: rotate(45deg);
+  width: 90%;
+}
+header nav .toggle-btn.clicked span:nth-child(2) {
+  transform: translateX(100px);
+}
+header nav .toggle-btn.clicked span:nth-child(3) {
+  transform: translateY(0);
+  transform: rotate(315deg);
+  width: 90%;
+}
+
 .land-page-content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -151,6 +180,7 @@ header nav .toggle-btn span:last-child {
   padding: 5px;
   border: 4px solid #888585;
   border-radius: 5px;
+  width: 100%;
 }
 
 .land-page-content .form-section {
@@ -377,9 +407,6 @@ footer .author {
   .page-wraper {
     height: 100%;
   }
-  .page-wraper .overlay {
-    height: 100%;
-  }
 
   header .logo-box {
   }
@@ -388,9 +415,8 @@ footer .author {
     font-size: 23px;
   }
   header nav .toggle-btn {
-    display: inline-block;
+    display: flex;
     margin: 0;
-    right: -170px;
   }
   header nav .nav-list {
     display: block;
@@ -509,9 +535,6 @@ footer .author {
     width: 100%;
   }
   .page-wraper {
-    height: 100%;
-  }
-  .page-wraper .overlay {
     height: 100%;
   }
 
@@ -717,9 +740,7 @@ footer .author {
   .page-wraper {
     height: 100%;
   }
-  .page-wraper .overlay {
-    height: 100%;
-  }
+
   header .logo-box {
     width: 45vw;
     margin-left: 50px;
@@ -746,6 +767,7 @@ footer .author {
   text-align: center;
   margin-bottom: 75px;
   position: relative;
+  z-index: -1;
 }
 
 .title::after {
@@ -764,5 +786,6 @@ header.scrolled {
   background-color: rgb(251 222 120 / 30%);
   backdrop-filter: blur(30px);
   background-clip: border-box;
+  z-index: 2;
 }
 /* ++++++++++++++++++++++++++++++ End framework ++++++++++++++++++++++++++++++ */
