@@ -39,7 +39,7 @@ addActive(links);
 // when the window is scrolled add the class scrolled to the navbar 
 window.addEventListener("scroll", function () {
   header.classList.toggle("scrolled", window.scrollY > headerHeight + 10);
-  // if the nav list opened 
+  // if the nav list opened  remove scrolled class
   if (navList.classList.contains("open")) {
     header.classList.remove('scrolled');
   }
