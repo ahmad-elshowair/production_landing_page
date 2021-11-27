@@ -21,7 +21,7 @@ p {
   font-weight: 300;
 }
 .container {
-  max-width: 1000px;
+  max-width: 1140px;
   width: 100%;
   margin: 0 auto;
 }
@@ -34,10 +34,6 @@ p {
   background-attachment: fixed;
   position: relative;
   overflow: hidden;
-}
-.page-wraper .container {
-  position: relative;
-  z-index: 2;
 }
 
 .page-wraper .overlay {
