@@ -42,7 +42,7 @@ p {
   width: 100%;
   top: 0;
   left: 0;
-  background-color: #34333c;
+  background-color: rgb(0 0 0 / 75%);
   mix-blend-mode: overlay;
   z-index: 0;
 }
