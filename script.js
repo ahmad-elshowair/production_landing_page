@@ -36,9 +36,12 @@ goToSection(siteLinks);
 addActive(links);
 
 
+// when the window is scrolled add the class scrolled to the navbar 
 window.addEventListener("scroll", function () {
-  if (!navList.classList.contains("open")) {
-    header.classList.toggle("scrolled", window.scrollY > headerHeight + 10);
+  header.classList.toggle("scrolled", window.scrollY > headerHeight + 10);
+  // if the nav list opened  remove scrolled class
+  if (navList.classList.contains("open")) {
+    header.classList.remove('scrolled');
   }
 });
 
