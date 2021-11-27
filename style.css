@@ -47,6 +47,10 @@ p {
   z-index: 0;
 }
 
+.page-wraper .container {
+  position: relative;
+}
+
 header {
   position: fixed;
   top: 0;
