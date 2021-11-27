@@ -78,12 +78,6 @@ header .logo-box a span {
   color: var(--main-color);
 }
 
-header nav {
-  width: 100%;
-  margin-right: 200px;
-  text-align: right;
-}
-
 header nav .nav-list {
   padding: 0;
 }
