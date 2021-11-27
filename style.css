@@ -44,7 +44,9 @@ p {
   left: 0;
   background-color: #34333c;
   mix-blend-mode: overlay;
+  z-index: 0;
 }
+
 header {
   position: fixed;
   top: 0;
@@ -377,9 +379,6 @@ footer .author {
   .page-wraper {
     height: 100%;
   }
-  .page-wraper .overlay {
-    height: 100%;
-  }
 
   header .logo-box {
   }
@@ -509,9 +508,6 @@ footer .author {
     width: 100%;
   }
   .page-wraper {
-    height: 100%;
-  }
-  .page-wraper .overlay {
     height: 100%;
   }
 
@@ -717,9 +713,7 @@ footer .author {
   .page-wraper {
     height: 100%;
   }
-  .page-wraper .overlay {
-    height: 100%;
-  }
+
   header .logo-box {
     width: 45vw;
     margin-left: 50px;
