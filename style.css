@@ -370,239 +370,6 @@ footer .author {
 /* End footer style */
 
 /* +++++++++++++++++++++++++++++++++ Start gird system +++++++++++++++++++++++++++++++++ */
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199px) {
-  .container {
-    max-width: 960px;
-  }
-
-  /* Start wraper page section style */
-  .page-wraper {
-    height: 100%;
-  }
-  .page-wraper .overlay {
-    height: 100%;
-  }
-  header .logo-box {
-    width: 45vw;
-    margin-left: 50px;
-  }
-  header nav {
-  }
-
-  header nav .nav-list {
-  }
-  header nav .toggle-btn {
-    display: none;
-  }
-
-  .land-page-content {
-    margin: 200px 0 50px;
-  }
-  /* End wraper page section style */
-}
-
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991px) {
-  .container {
-    max-width: 720px;
-  }
-  /* Start Wraper page section style */
-  .page-wraper {
-    height: 100%;
-  }
-  header .logo-box {
-    width: 45vw;
-    margin-left: 50px;
-  }
-  header nav .nav-list {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    padding: 75px 0 0;
-    background-color: rgb(251 222 120 / 50%);
-    backdrop-filter: blur(30px);
-    background-clip: border-box;
-    transform: translateY(-700px);
-    transition: 0.5s;
-  }
-
-  header nav .nav-list.open {
-    transform: translateX(0);
-  }
-
-  header nav .nav-list li {
-    display: block;
-    margin-bottom: 10px;
-    padding: 10px 0;
-    margin-left: 0;
-    transition: 0.5s;
-  }
-  header nav .nav-list li:last-child {
-    margin-bottom: 0;
-  }
-  header nav .nav-list li .nav-link {
-    display: block;
-    color: #fff;
-
-    transition: 0.5s;
-  }
-  header nav .nav-list li:hover {
-    background-color: #7a6d3b;
-  }
-  header nav .nav-list li:hover .nav-link {
-    color: var(--main-color);
-    margin-left: 10px;
-  }
-  header nav .toggle-btn {
-    display: inline-block;
-    margin: 0;
-    right: -147px;
-  }
-  .land-page-content {
-    margin: 200px 0 100px;
-  }
-  .land-page-content .video-section {
-    grid-row: 1/3;
-    grid-column: 1/4;
-  }
-  .land-page-content .video-section iframe {
-    width: 100%;
-  }
-  .land-page-content .form-section {
-    grid-row: 3/4;
-    grid-column: 1/4;
-  }
-  /* End Wraper page section style */
-
-  /* Start services Section style */
-  .services .info p {
-    font-size: 14px;
-  }
-  /* End services Section style */
-
-  /* Start prices section style */
-  .price-section .prices .price {
-    width: calc(90% / 3);
-  }
-  /* End prices section style */
-}
-
-/* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767) {
-  /* Start landing page section */
-  .page-wraper {
-    height: 100%;
-  }
-  .page-wraper .overlay {
-    height: 100%;
-  }
-
-  header .logo-box {
-    width: 360px;
-    margin-left: 24px;
-  }
-  header .logo-box a {
-    font-size: 29px;
-  }
-  header nav .toggle-btn {
-    display: inline-block;
-    margin: 0;
-    right: -170px;
-  }
-  header nav .nav-list {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    text-align: center;
-    padding: 75px 0 0;
-    background-color: rgb(251 222 120 / 50%);
-    backdrop-filter: blur(30px);
-    background-clip: border-box;
-    transform: translateY(-700px);
-    transition: 0.5s;
-  }
-
-  header nav .nav-list.open {
-    transform: translateX(0);
-  }
-
-  header nav .nav-list li {
-    display: block;
-    margin-bottom: 10px;
-    padding: 10px 0;
-    margin-left: 0;
-    transition: 0.5s;
-  }
-  header nav .nav-list li:last-child {
-    margin-bottom: 0;
-  }
-  header nav .nav-list li .nav-link {
-    display: block;
-    color: #fff;
-
-    transition: 0.5s;
-  }
-  header nav .nav-list li:hover {
-    background-color: #7a6d3b;
-  }
-  header nav .nav-list li:hover .nav-link {
-    color: var(--main-color);
-    margin-left: 10px;
-  }
-  .land-page-content {
-    margin: 150px 0 0;
-    text-align: center;
-  }
-
-  .land-page-content .video-section {
-    grid-column: 1/4;
-    grid-row: 1/2;
-  }
-
-  .land-page-content .form-section {
-    grid-column: 1/4;
-    grid-row: 2/4;
-  }
-  /* End landing page section */
-
-  /* Start services style */
-  .services-section {
-    padding: 50px 20px;
-  }
-  .services-section h2 {
-    font-size: 30px;
-  }
-  .services-section .services {
-    grid-template-columns: repeat(2, 1fr);
-  }
-  .services-section .service .info {
-    padding: 10px;
-  }
-  /* End services style */
-
-  /* Start pricing section style */
-  .price-section .prices .price {
-    width: calc(90% / 3);
-  }
-  /* End pricing section style */
-
-  /* Start contact section style */
-  .contact-section {
-    padding: 50px 30px;
-  }
-  .contact-section h2 {
-    font-size: 30px;
-  }
-  /* End contact section style */
-}
-
 /* Extra Small devices (portrait phones, less than 576px)*/
 @media (max-width: 575px) {
   /* Start landing page section */
@@ -733,6 +500,238 @@ footer .author {
     min-height: 150px;
   }
   /* End contact section style */
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  /* Start landing page section */
+  .page-wraper {
+    height: 100%;
+  }
+  .page-wraper .overlay {
+    height: 100%;
+  }
+
+  header .logo-box {
+    width: 360px;
+    margin-left: 24px;
+  }
+  header .logo-box a {
+    font-size: 29px;
+  }
+  header nav .toggle-btn {
+    display: inline-block;
+    margin: 0;
+    right: -170px;
+  }
+  header nav .nav-list {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 75px 0 0;
+    background-color: rgb(251 222 120 / 50%);
+    backdrop-filter: blur(30px);
+    background-clip: border-box;
+    transform: translateY(-700px);
+    transition: 0.5s;
+  }
+
+  header nav .nav-list.open {
+    transform: translateX(0);
+  }
+
+  header nav .nav-list li {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    margin-left: 0;
+    transition: 0.5s;
+  }
+  header nav .nav-list li:last-child {
+    margin-bottom: 0;
+  }
+  header nav .nav-list li .nav-link {
+    display: block;
+    color: #fff;
+
+    transition: 0.5s;
+  }
+  header nav .nav-list li:hover {
+    background-color: #7a6d3b;
+  }
+  header nav .nav-list li:hover .nav-link {
+    color: var(--main-color);
+    margin-left: 10px;
+  }
+  .land-page-content {
+    margin: 150px 0 0;
+    text-align: center;
+  }
+
+  .land-page-content .video-section {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+
+  .land-page-content .form-section {
+    grid-column: 1/4;
+    grid-row: 2/4;
+  }
+  /* End landing page section */
+
+  /* Start services style */
+  .services-section {
+    padding: 50px 20px;
+  }
+  .services-section h2 {
+    font-size: 30px;
+  }
+  .services-section .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .services-section .service .info {
+    padding: 10px;
+  }
+  /* End services style */
+
+  /* Start pricing section style */
+  .price-section .prices .price {
+    width: calc(90% / 3);
+  }
+  /* End pricing section style */
+
+  /* Start contact section style */
+  .contact-section {
+    padding: 50px 30px;
+  }
+  .contact-section h2 {
+    font-size: 30px;
+  }
+  /* End contact section style */
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  /* Start Wraper page section style */
+  .page-wraper {
+    height: 100%;
+  }
+  header .logo-box {
+    width: 45vw;
+    margin-left: 50px;
+  }
+  header nav .nav-list {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 75px 0 0;
+    background-color: rgb(251 222 120 / 50%);
+    backdrop-filter: blur(30px);
+    background-clip: border-box;
+    transform: translateY(-700px);
+    transition: 0.5s;
+  }
+
+  header nav .nav-list.open {
+    transform: translateX(0);
+  }
+
+  header nav .nav-list li {
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    margin-left: 0;
+    transition: 0.5s;
+  }
+  header nav .nav-list li:last-child {
+    margin-bottom: 0;
+  }
+  header nav .nav-list li .nav-link {
+    display: block;
+    color: #fff;
+
+    transition: 0.5s;
+  }
+  header nav .nav-list li:hover {
+    background-color: #7a6d3b;
+  }
+  header nav .nav-list li:hover .nav-link {
+    color: var(--main-color);
+    margin-left: 10px;
+  }
+  header nav .toggle-btn {
+    display: inline-block;
+    margin: 0;
+    right: -147px;
+  }
+  .land-page-content {
+    margin: 200px 0 100px;
+  }
+  .land-page-content .video-section {
+    grid-row: 1/3;
+    grid-column: 1/4;
+  }
+  .land-page-content .video-section iframe {
+    width: 100%;
+  }
+  .land-page-content .form-section {
+    grid-row: 3/4;
+    grid-column: 1/4;
+  }
+  /* End Wraper page section style */
+
+  /* Start services Section style */
+  .services .info p {
+    font-size: 14px;
+  }
+  /* End services Section style */
+
+  /* Start prices section style */
+  .price-section .prices .price {
+    width: calc(90% / 3);
+  }
+  /* End prices section style */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+
+  /* Start wraper page section style */
+  .page-wraper {
+    height: 100%;
+  }
+  .page-wraper .overlay {
+    height: 100%;
+  }
+  header .logo-box {
+    width: 45vw;
+    margin-left: 50px;
+  }
+  header nav {
+  }
+
+  header nav .nav-list {
+  }
+  header nav .toggle-btn {
+    display: none;
+  }
+
+  .land-page-content {
+    margin: 200px 0 50px;
+  }
+  /* End wraper page section style */
 }
 
 /* ++++++++++++++++++++++++++++++ End gird system ++++++++++++++++++++++++++++++ */
