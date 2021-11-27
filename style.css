@@ -116,15 +116,6 @@ header nav .toggle-btn {
   cursor: pointer;
   display: none;
 }
-header nav .toggle-btn.clicked::after {
-  content: " ";
-  position: absolute;
-  border-width: 13px;
-  border-style: solid;
-  border-color: transparent transparent #fff transparent;
-  top: 11px;
-  right: 5px;
-}
 
 header nav .toggle-list:focus {
   outline: none;
@@ -392,9 +383,8 @@ footer .author {
     font-size: 23px;
   }
   header nav .toggle-btn {
-    display: inline-block;
+    display: block;
     margin: 0;
-    right: -170px;
   }
   header nav .nav-list {
     display: block;
