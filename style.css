@@ -539,9 +539,8 @@ footer .author {
     font-size: 29px;
   }
   header nav .toggle-btn {
-    display: inline-block;
+    display: flex;
     margin: 0;
-    right: -170px;
   }
   header nav .nav-list {
     display: block;
