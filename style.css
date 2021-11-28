@@ -408,11 +408,8 @@ footer .author {
     height: 100%;
   }
 
-  /* header .logo-box {
-  } */
-
   header .logo-box a {
-    font-size: 23px;
+    font-size: 28px;
   }
   header nav .toggle-btn {
     display: flex;
@@ -745,11 +742,7 @@ footer .author {
     width: 45vw;
     margin-left: 50px;
   }
-  /* header nav {
-  }
-
-  header nav .nav-list {
-  } */
+  
   header nav .toggle-btn {
     display: none;
   }
