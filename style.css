@@ -641,10 +641,7 @@ footer .author {
   .page-wraper {
     height: 100%;
   }
-  header .logo-box {
-    width: 45vw;
-    margin-left: 50px;
-  }
+
   header nav .nav-list {
     display: block;
     position: absolute;
