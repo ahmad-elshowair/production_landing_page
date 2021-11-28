@@ -49,6 +49,10 @@ window.addEventListener("scroll", function () {
 // Start toggle nav list 
 toggleButton.onclick = function (e) {
   e.stopPropagation();
+  e.preventDefault();
+  if (header.classList.contains('scrolled')) {
+    header.classList.remove('scrolled');
+  }
   this.classList.toggle("clicked");
   navList.classList.toggle("open");
 }
