@@ -685,9 +685,8 @@ footer .author {
     margin-left: 10px;
   }
   header nav .toggle-btn {
-    display: inline-block;
+    display: flex;
     margin: 0;
-    right: -147px;
   }
   .land-page-content {
     margin: 200px 0 100px;
@@ -734,7 +733,7 @@ footer .author {
     width: 45vw;
     margin-left: 50px;
   }
-  
+
   header nav .toggle-btn {
     display: none;
   }
