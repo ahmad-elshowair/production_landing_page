@@ -384,6 +384,7 @@ footer ul li:last-child {
 footer ul li a {
   color: #7a6d3b;
   transition: color ease-in 1s;
+  font-weight: bold;
 }
 
 footer ul li a:hover {
@@ -737,7 +738,7 @@ footer .author {
     width: 45vw;
     margin-left: 50px;
   }
-  
+
   header nav .toggle-btn {
     display: none;
   }
