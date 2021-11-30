@@ -247,6 +247,11 @@ header nav .toggle-btn.clicked span:nth-child(3) {
   text-align: center;
 }
 
+.services-section .service {
+  padding: 15px;
+  box-shadow: 0 0 20px #dfd9d9;
+  border-radius: 20px;
+}
 .services-section .service .icon img {
   width: 20%;
 }
