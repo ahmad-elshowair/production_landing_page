@@ -701,6 +701,10 @@ footer .author {
   .services .info p {
     font-size: 14px;
   }
+  .services-section .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   /* End services Section style */
 
   /* Start prices section style */
