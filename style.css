@@ -390,7 +390,7 @@ footer ul li a {
 }
 
 footer ul li a:hover {
-  color: #fff;
+  color: var(--main-color);
 }
 
 footer .author {
@@ -400,6 +400,13 @@ footer .author {
 footer .author h5 {
   font-weight: bold;
   font-size: 14px;
+}
+footer .author h5 a {
+  transition: color ease-in 1s;
+  color: #7a6d3b;
+}
+footer .author h5 a:hover {
+  color: var(--main-color);
 }
 /* End footer style */
 
