@@ -631,6 +631,13 @@ footer .author {
   .contact-section h2 {
     font-size: 30px;
   }
+  .contact-section form .form-control {
+    grid-column: 1/4;
+  }
+  .contact-section form textarea {
+    grid-row: 4/4;
+    min-height: 150px;
+  }
   /* End contact section style */
 }
 
