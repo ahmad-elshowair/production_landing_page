@@ -396,6 +396,11 @@ footer ul li a:hover {
 footer .author {
   color: #7a6d3b;
 }
+
+footer .author h5 {
+  font-weight: bold;
+  font-size: 14px;
+}
 /* End footer style */
 
 /* +++++++++++++++++++++++++++++++++ Start gird system +++++++++++++++++++++++++++++++++ */
